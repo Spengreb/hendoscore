@@ -1,0 +1,11 @@
+version: '2'
+services:
+    hendoscore-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/hendoscore/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=hendoscore
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
